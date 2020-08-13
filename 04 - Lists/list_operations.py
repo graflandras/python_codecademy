@@ -43,6 +43,14 @@ print(jake_votes) #>>9
 
 #Sorting Lists I
 #Sometimes, we want to sort a list in either numerical (1, 2, 3, …) or alphabetical (a, b, c, …) order.
-#We can sort a list in place using .sort().
+#We can sort a list in place using .sort(). Sort modifies the original list. 
 #sort does not return anything. So, if we try to assign names.sort() to a variable, our new variable would be None. 
-print(votes[:5].sort())
+#votes.sort()
+
+#Sorting Lists II
+#A second way of sorting a list is to use sorted. 
+#It comes before a list, instead of after. It generates a new list and does not modifies the original list. 
+games = ['Portal', 'Minecraft', 'Pacman', 'Tetris', 'The Sims', 'Pokemon']
+games_sorted = sorted(games)
+print(games) #>>['Portal', 'Minecraft', 'Pacman', 'Tetris', 'The Sims', 'Pokemon']
+print(games_sorted) #>>['Minecraft', 'Pacman', 'Pokemon', 'Portal', 'Tetris', 'The Sims']

@@ -35,3 +35,8 @@ print(testList[2:]) #>>[3, 4, 5, 6, 7, 8]
 
 #If we want to select the last 3 elements of fruits, we can also use this syntax:
 print(testList[-3:]) #>>[6, 7, 8]
+
+#Counting elements in a list
+votes = ['Jake', 'Jake', 'Laurie', 'Laurie', 'Laurie', 'Jake', 'Jake', 'Jake', 'Laurie', 'Cassie', 'Cassie', 'Jake', 'Jake', 'Cassie', 'Laurie', 'Cassie', 'Jake', 'Jake', 'Cassie', 'Laurie']
+jake_votes = votes.count('Jake')
+print(jake_votes) #>>9

@@ -24,3 +24,14 @@ beginning = suitcase[0:4]
 print(beginning) #>>['shirt', 'shirt', 'pants', 'pants']
 middle = suitcase[2:4]
 print(middle) #>>['pants', 'pants']
+
+testList = [1, 2, 3, 4, 5, 6, 7, 8]
+#Slicing Lists II
+#When starting at the beginning of the list, it is also valid to omit the 0:
+print(testList[:3]) #>>[1, 2, 3]
+
+#We can do something similar when selecting the last few items of a list:
+print(testList[2:]) #>>[3, 4, 5, 6, 7, 8]
+
+#If we want to select the last 3 elements of fruits, we can also use this syntax:
+print(testList[-3:]) #>>[6, 7, 8]

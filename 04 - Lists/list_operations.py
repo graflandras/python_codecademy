@@ -40,3 +40,9 @@ print(testList[-3:]) #>>[6, 7, 8]
 votes = ['Jake', 'Jake', 'Laurie', 'Laurie', 'Laurie', 'Jake', 'Jake', 'Jake', 'Laurie', 'Cassie', 'Cassie', 'Jake', 'Jake', 'Cassie', 'Laurie', 'Cassie', 'Jake', 'Jake', 'Cassie', 'Laurie']
 jake_votes = votes.count('Jake')
 print(jake_votes) #>>9
+
+#Sorting Lists I
+#Sometimes, we want to sort a list in either numerical (1, 2, 3, …) or alphabetical (a, b, c, …) order.
+#We can sort a list in place using .sort().
+#sort does not return anything. So, if we try to assign names.sort() to a variable, our new variable would be None. 
+print(votes[:5].sort())

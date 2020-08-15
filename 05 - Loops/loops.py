@@ -98,18 +98,37 @@ print(can_ride_coaster)
 
 my_upvotes = [192, 34, 22, 175, 75, 101, 97]
 
-#We want to add 100 to each value. We can accomplish this goal in one line:
+# We want to add 100 to each value. We can accomplish this goal in one line:
 
 updated_upvotes = [vote_value + 100 for vote_value in my_upvotes]
 
-#This list comprehension:
-#Takes a number in my_upvotes
-#Assigns that number to a variable called vote_value
-#Adds 100 to vote_value
-#Appends that sum to the new list updated_upvotes
-#Repeats steps 1-4 for all of the numbers in my_upvotes
+# This list comprehension:
+# Takes a number in my_upvotes
+# Assigns that number to a variable called vote_value
+# Adds 100 to vote_value
+# Appends that sum to the new list updated_upvotes
+# Repeats steps 1-4 for all of the numbers in my_upvotes
 
 celsius = [0, 10, 15, 32, -5, 27, 3]
-#Using a list comprehension, create a new list called fahrenheit that converts each element in the celsius list to fahrenheit.
-fahrenheit = [(celsius_value* 9/5 + 32) for celsius_value in celsius]
+# Using a list comprehension, create a new list called fahrenheit that converts each element in the celsius list to fahrenheit.
+fahrenheit = [(celsius_value * 9/5 + 32) for celsius_value in celsius]
 print(fahrenheit)
+
+
+# Lesson recap
+# Create a list called single_digits that consists of the numbers 0-9 (inclusive).
+single_digits = range(10)
+
+# Create a for loop that goes through single_digits and prints out each one.
+squares = []
+for number in single_digits:
+    print(number)
+    squares.append(number**2)
+print(squares)
+# Before the loop, create a list called squares. Assign it to be an empty list to begin with.
+
+# Inside the loop that iterates through single_digits, append the squared value of each element of single_digits to the list squares. You can do this before or after printing the element.
+
+# Create the list cubes using a list comprehension on the single_digits list. Each element of cubes should be an element of single_digits taken to the third power.
+cubes = [number**3 for number in single_digits]
+print(cubes)

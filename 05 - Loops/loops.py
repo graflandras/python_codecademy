@@ -66,3 +66,31 @@ for location in sales_data:
         scoops_sold += number
 
 print(scoops_sold)
+
+
+# List Comprehensions
+# Let’s say we have scraped a certain website and gotten these words:
+
+words = ["@coolguy35", "#nofilter", "@kewldawg54",
+         "reply", "timestamp", "@matchamom", "follow", "#updog"]
+
+# We want to make a new list, called usernames, that has all of the strings
+# in words with an '@' as the first character. We know we can do this with a for loop:
+# usernames = []
+# for word in words:
+#    if word[0] == '@':
+#        usernames.append(word)
+# Python has a convenient shorthand to create lists like this with one line, This is called a list comprehension:
+
+usernames = [word for word in words if word[0] == '@']
+
+# This list comprehension:
+# Takes an element in words
+# Assigns that element to a variable called word
+# Checks if word[0] == '@', and if so, it adds word to the new list, usernames. If not, nothing happens.
+# Repeats steps 1-3 for all of the strings in words
+
+
+heights = [161, 164, 156, 144, 158, 170, 163, 163, 157]
+can_ride_coaster = [height for height in heights if (height > 161)]
+print(can_ride_coaster)

@@ -20,3 +20,11 @@ def common_letters(string_one, string_two):
         if (letter in string_two) and not (letter in common):
             common.append(letter)
     return common
+
+#for the temporary password, they want the function to take the input user name and 
+# shift all of the letters by one to the right, so the last letter of the username 
+# ends up as the first letter and so forth. For example, if the username is AbeSimp, 
+# then the temporary password generated should be pAbeSim. Start by defining the 
+# function password_generator so that it takes one input, username and in it define 
+# an empty string named password.
+
